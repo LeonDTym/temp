@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+}
+<html>
+<head>
+    <title>Магазин смартфонов</title>
+</head>
+<body>
+    <form method="post">
+        <input type="hidden" value="@ViewBag.PhoneId" name="PhoneId" />
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="UserName" /></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel" name="PhoneNumber" /></td>
+            </tr>
+            <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+        </table>
+    </form>
+    <a href="~/Home/Index">Вернуться</a>
+</body>
+</html>
