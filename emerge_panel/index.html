@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  	<title>Выезжающая панель | pcvector.net</title>
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<!-- stylesheets -->
+  	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  	<link rel="stylesheet" href="css/slide.css" type="text/css" media="screen" />	
+  	<!-- PNG FIX for IE6 -->
+	<!--[if lte IE 6]>
+		<script type="text/javascript" src="js/pngfix/supersleight-min.js"></script>
+	<![endif]--> 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/slide.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!-- Panel -->
+<div id="toppanel">
+	<div id="panel">
+		<div class="content clearfix">
+			<div class="left">
+				<h1>Добро пожаловать</h1>
+				<h2>Демка выезжающей панели</h2>		
+				<p class="grey">Сюда вы можете поместить всё что угодно: видео, аудио, картинки, формы...</p>
+			</div>
+			<div class="left">
+				<!-- Login Form -->
+				<form class="clearfix" action="#" method="post">
+					<h1>Панель входа</h1>
+					<label class="grey" for="log">Логин:</label>
+					<input class="field" type="text" name="log" id="log" value="" size="23" />
+					<label class="grey" for="pwd">Пароль:</label>
+					<input class="field" type="password" name="pwd" id="pwd" size="23" />
+	            	<label><input name="rememberme" id="rememberme" type="checkbox" checked="checked" value="forever" /> &nbsp;Запомнить</label>
+        			<div class="clear"></div>
+					<input type="submit" name="submit" value="Войти" class="button normal white" />
+					<a class="lost-pwd" href="#">Забыли пароль?</a>
+				</form>
+			</div>
+			<div class="left right">			
+				<!-- Register Form -->
+				<form action="#" method="post">
+					<h1>Присоединяйтесь!</h1			
+					<label class="grey" for="signup">Логин:</label><br/>
+					<input class="field" type="text" name="signup" id="signup" value="" size="23" />
+					<label class="grey" for="email">Почта:</label>
+					<input class="field" type="text" name="email" id="email" size="23" />
+					<label>Пароль будет отправлен вам по почте.</label>
+					<input type="submit" name="submit" value="Зарегистрироваться" class="button normal white" />
+				</form>
+			</div>
+		</div>
+	</div> <!-- /login -->	
+
+    <!-- The tab on top -->	
+	<div class="tab">
+		<ul class="login">
+
+	        <li class="welcome">Добро пожаловать!</li>
+			<li class="sep">|</li>
+			<li id="toggle">
+				<a id="open" class="open" href="#">Войти/Зарегиться</a>
+				<a id="close" style="display: none;" class="close" href="#">Закрыть панель</a>			
+			</li>
+
+		</ul> 
+	</div> <!-- / top -->
+	
+</div> <!--panel -->
+
+<!-- pcvector.net -->
+<script type="text/javascript" src="/templates/pcv/js/pcvector.js"></script>
+<!-- /pcvector.net -->
+</body>
+</html>
