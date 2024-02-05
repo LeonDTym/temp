@@ -76,3 +76,47 @@ https://www.dotnetxp.com/download-csv-file-asp-net-mvc/
 </body>
 </html>
 
+bootstrap
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Bootstrap Table</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+        <th>Column 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+        <td>Data 4</td>
+      </tr>
+      <tr>
+        <td>Data 5</td>
+        <td>Data 6</td>
+        <td>Data 7</td>
+        <td>Data 8</td>
+      </tr>
+      <tr>
+        <td>Data 9</td>
+        <td>Data 10</td>
+        <td>Data 11</td>
+        <td>Data 12</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
