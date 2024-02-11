@@ -1,122 +1,77 @@
 # temp
 https://www.dotnetxp.com/download-csv-file-asp-net-mvc/
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .container {
-      position: relative;
-      width: 300px;
-      height: 200px;
+@model Piranha.Extend.Blocks.VideoBlock
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>    
+    #video_box {
+        position: relative;
     }
 
-    .image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    #video_overlays {
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        background: rgb(34,193,195);
+        background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 39%, rgba(253,187,45,0.644782913165266) 59%, rgba(253,187,45,0) 100%);
+        z-index: 100;
+      /*   bottom: 10px;
+        left: 10px; */
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
+    
+    * {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  scroll-behavior: smooth;
+  transition: 0.5s ease-in;
+}
 
-    .overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 50px;
-      background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <img src="image.jpg" alt="image" class="image">
-    <div class="overlay"></div>
-  </div>
-</body>
-</html>
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #333;
+  display: grid;
+  place-content: center;
+        justify-content: center;
+        align-items: center;
+  animation: grow 1s infinite;
+}
+.circle > span {
+  color: #eee;
+  font-size: 50px;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .wave {
-      width: 200px;
-      height: 100px;
-      position: relative;
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-      margin: 50px auto;
-    }
+@@keyframes grow {
+  from {
+    box-shadow: 0px 0px 1em #000;
+  }
+  to {
+    box-shadow: 0px 0px 3em #000;
+  }
+}
 
-    .wave:before,
-    .wave:after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 20px;
-      bottom: 0;
-      background: #fff;
-    }
+</style>
 
-    .wave:before {
-      border-radius: 50% 50% 0 0;
-    }
+<div id="video_box">
+    <div id="video_overlays">
+        <div class="circle">
 
-    .wave:after {
-      border-radius: 0 0 50% 50%;
-      bottom: 20px;
-    }
-  </style>
-</head>
-<body>
-  <div class="wave"></div>
-</body>
-</html>
+            <span class="material-icons">
+                play_circle
+            </span>
 
-bootstrap
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
-<body>
-
-<div class="container">
-  <h2>Bootstrap Table</h2>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Column 1</th>
-        <th>Column 2</th>
-        <th>Column 3</th>
-        <th>Column 4</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Data 1</td>
-        <td>Data 2</td>
-        <td>Data 3</td>
-        <td>Data 4</td>
-      </tr>
-      <tr>
-        <td>Data 5</td>
-        <td>Data 6</td>
-        <td>Data 7</td>
-        <td>Data 8</td>
-      </tr>
-      <tr>
-        <td>Data 9</td>
-        <td>Data 10</td>
-        <td>Data 11</td>
-        <td>Data 12</td>
-      </tr>
-    </tbody>
-  </table>
+        </div>
+    </div>
+<video class="mw-100" controls>
+    <source src="@Url.Content(Model.Body)">
+    Your browser does not support the video tag.
+</video>
 </div>
 
-</body>
-</html>
+
+
