@@ -73,12 +73,32 @@ https://www.dotnetxp.com/download-csv-file-asp-net-mvc/
 </video>
 </div>
 
+const queryAdvInput = document.getElementById("queryAdv");
+const archiveChbx = document.getElementById("archiveChbx");
+const fullTextChbx = document.getElementById("fullTextChbx");
 
-1. "Онлайн-платформа департамента персонала: удобство и эффективность"
-Наш сайт департамента персонала предлагает сотрудникам и руководителям дополнительные возможности для управления кадровыми вопросами. Благодаря онлайн-сервисам, можно быстро подать заявку на отпуск, получить информацию о текущих вакансиях и процессе найма, а также взаимодействовать с HR-специалистами в реальном времени.
+if (sessionStorage.getItem("query") != null) {
+  queryAdvInput.value = sessionStorage.getItem("query");
+}
 
-2. "Развитие карьеры через сайт департамента персонала"
-Наш сайт департамента персонала не только предоставляет информацию о вакансиях и отпусках, но и создает условия для развития карьеры сотрудников. Здесь можно пройти онлайн-курсы и тренинги, оценить свои навыки и способности, а также получить консультацию по планированию карьеры и профессионального роста.
+if (sessionStorage.getItem("arcChbx") === "true") {
+  archiveChbx.checked = true;
+} else {
+  archiveChbx.checked = false;
+}
 
-3. "Как использовать сайт департамента персонала для повышения производительности"
-Используя функционал сайта департамента персонала, сотрудники могут организовать свою работу более эффективно. Здесь можно найти полезные инструменты для управления рабочим временем, обмена документами и информацией, а также для обратной связи и участия в корпоративных проектах. Это помогает повысить производительность и эффективность работы как индивидуально, так и в команде.
+if (sessionStorage.getItem("fullChbx") === "true") {
+  fullTextChbx.checked = true;
+} else {
+  fullTextChbx.checked = false;
+}
+
+document.getElementById("searchForm").addEventListener("submit", function (event) {
+  const query = queryAdvInput.value;
+  const arcChbx = archiveChbx.checked;
+  const fullChbx = fullTextChbx.checked;
+
+  sessionStorage.setItem("query", query);
+  sessionStorage.setItem("arcChbx", arcChbx);
+  sessionStorage.setItem("fullChbx", fullChbx);
+});
