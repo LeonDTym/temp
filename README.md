@@ -105,30 +105,3 @@ document.getElementById("searchForm").addEventListener("submit", function (event
 
 
 
-using NPOI.XWPF.UserModel;
-using System.IO;
-
-class Program
-{
-    static void Main()
-    {
-        XWPFDocument doc = new XWPFDocument();
-
-        // Создание таблицы с 1 строкой и 2 столбцами
-        XWPFTable table = doc.CreateTable(1, 2);
-
-        // Установка ширины столбцов
-        table.GetRow(0).GetCell(0).GetCTTc().AddNewTcPr().AddNewTcW().w = "4000"; // Ширина первого столбца
-        table.GetRow(0).GetCell(1).GetCTTc().AddNewTcPr().AddNewTcW().w = "4000"; // Ширина второго столбца
-
-        // Задание текста для ячеек
-        table.GetRow(0).GetCell(0).SetText("Ячейка 1,1");
-        table.GetRow(0).GetCell(1).SetText("Ячейка 1,2nЯчейка 1,3");
-
-        // Сохранение документа
-        using (FileStream fs = new FileStream("output.docx", FileMode.Create, FileAccess.Write))
-        {
-            doc.Write(fs);
-        }
-    }
-}
