@@ -125,4 +125,30 @@ class Program
     }
 }
 
+List<string> firstList = new List<string>
+{
+    "CN=текст1,CU=styn1",
+    "CN=текст2,CU=styn2",
+    "CN=текст3,CU=styn3"
+};
 
+List<string> secondList = new List<string>
+{
+    "текст1",
+    "текст2",
+    "текст3",
+    "текст4"
+};
+
+List<string> matches = firstList.Select(s => 
+    {
+        string[] parts = s.Split(',');
+        return parts.FirstOrDefault(part => part.StartsWith("CN="))?.Split('=')[1];
+    })
+    .Intersect(secondList)
+    .ToList();
+
+foreach (string match in matches)
+{
+    Console.WriteLine(match);
+}
