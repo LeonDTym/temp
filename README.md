@@ -104,26 +104,6 @@ document.getElementById("searchForm").addEventListener("submit", function (event
 });
 
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-class Program
-{
-    static void Main()
-    {
-        List<string> list1 = new List<string> {"apple", "banana", "orange", "grape" };
-        List<string> list2 = new List<string> {"apple", "grape", "kiwi"};
-
-        IEnumerable<string> difference = list1.Except(list2).Union(list2.Except(list1));
-
-        Console.WriteLine("Non-exact matches:");
-        foreach (string item in difference)
-        {
-            Console.WriteLine(item);
-        }
-    }
-}
 
 List<string> firstList = new List<string>
 {
