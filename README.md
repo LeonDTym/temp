@@ -65,7 +65,7 @@ document.getElementById("searchForm").addEventListener("submit", function (event
   <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
   <label for="name" class="form__label">Name</label>
 </div>
-
+<style>
 $primary: #11998e;
 $secondary: #38ef7d;
 $white: #fff;
@@ -114,3 +114,4 @@ $gray: #9b9b9b;
     position: absolute;
     top: 0;
     display: block;
+</style>
