@@ -115,3 +115,38 @@ $gray: #9b9b9b;
     top: 0;
     display: block;
 </style>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gradient Text Block</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-image: linear-gradient(to right, #ff8c00, #ff00ff);
+            color: white;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image.jpg" alt="Image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</body>
+</html>
