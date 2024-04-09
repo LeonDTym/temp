@@ -152,68 +152,25 @@ $gray: #9b9b9b;
 </html>
 
 
-using System;
-
-public class DateCalculator
-{
-    public static string GetCurrentDate(int num)
-    {
-        DateTime currentDate = DateTime.Now;
-        int currentYear = currentDate.Year;
-        int currentMonth = currentDate.Month;
-        int year;
-        string month;
-
-        switch (num)
-        {
-            case 1:
-                year = currentYear + 3;
-                month = "08";
-                break;
-            case 2:
-                year = currentYear + 2;
-                month = "08";
-                break;
-            case 3:
-                year = currentYear + 1;
-                month = "08";
-                break;
-            case 4:
-                year = currentMonth >= 6 ? currentYear + 1 : currentYear;
-                month = "08";
-                break;
-            case 5:
-                year = currentYear + 4;
-                month = "06";
-                break;
-            case 6:
-                year = currentYear + 3;
-                month = "06";
-                break;
-            case 7:
-                year = currentYear + 2;
-                month = "06";
-                break;
-            case 8:
-                year = currentYear + 1;
-                month = "06";
-                break;
-            case 9:
-                year = currentMonth >= 6 ? currentYear + 1 : currentYear;
-                month = "06";
-                break;
-            case 10:
-                year = currentYear + 1;
-                month = "06";
-                break;
-            case 11:
-                year = currentMonth >= 6 ? currentYear + 1 : currentYear;
-                month = "06";
-                break;
-            default:
-                return "invalid year";
-        }
-
-        return $"{month}.{year}";
-    }
+.custom { 
+ width: 200px; 
+ padding: 0px; 
+ margin: 0px; 
+} 
+.gradient-page { 
+ width: 100%; 
+ min-height: 200px; 
+ padding: 0px; 
+ margin: 0px; 
+ border-radius: 20px; 
+ display: flex; 
+ justify-content: center; 
+ align-items: center; 
 }
+<div class="custom @(await Model.GetSection(Api))" style="border: none; background-color: transparent;"> 
+  <div class="gradient-page"> 
+   <div> 
+    <a href="@WebApp.Url(Model.Body.Page.Slug)">@Model.GetTitle()</a> 
+   </div> 
+  </div> 
+ </div> 
