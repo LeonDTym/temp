@@ -175,6 +175,77 @@ $gray: #9b9b9b;
   </div> 
  </div> 
 
+
+
+Конечно! Давайте создадим HTML-код, который будет иметь полупрозрачный градиент над изображением, а справа от изображения будет текст с таким же градиентом.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image {
+            width: 300px; /* Укажите размер изображения */
+            height: auto;
+        }
+
+        .gradient-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            right: 20px; /* Расстояние от правого края */
+            transform: translateY(-50%);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: right;
+            background: linear-gradient(to bottom, #ff9900, #ff3300); /* Градиент для текста */
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="your-image.jpg" alt="Your Image" class="image">
+        <div class="gradient-overlay"></div>
+        <div class="text">Ваш текст</div>
+    </div>
+</body>
+</html>
+```
+
+Замените `"your-image.jpg"` на путь к вашему изображению. Вы также можете настроить размер изображения, цвета градиента и текста, а также расположение текста справа от изображения. Удачи с вашим проектом! 🚀
+
+Источник: беседа с Bing, 10.04.2024
+(1) undefined. https://skillbox.ru/media/code/7-neyrosetey-dlya-programmistov-kak-pisat-kod-bystree-i-luchshe/.
+(2) undefined. https://proglib.io/p/25-besplatnyh-ai-instrumentov-dlya-razrabotchikov-2023-10-18.
+(3) undefined. https://journal.tinkoff.ru/short/ai-for-all/.
+(4) html - Gradient and text over image - Stack Overflow. https://stackoverflow.com/questions/45332759/gradient-and-text-over-image.
+(5) How to Create CSS Text Gradient - W3Schools. https://www.w3schools.in/css3/gradient-text.
+(6) Creating Gradient Text with HTML and CSS - Coding Dude. https://www.coding-dude.com/wp/css/gradient-text/.
+(7) undefined. https://www.upload.ee/image/7272952/case-studies-item.png.
+(8) undefined. https://www.upload.ee/image/7272954/left-arrow.png.
+(9) How TO - Position Text Over an Image - W3Schools. https://www.w3schools.com/howto/howto_css_image_text.asp.
+(10) html - Gradient over img tag using css - Stack Overflow. https://stackoverflow.com/questions/23935758/gradient-over-img-tag-using-css.
+(11) How to add a gradient overlay to a background image using just CSS and HTML. https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/.
+(12) Using CSS gradients - CSS: Cascading Style Sheets | MDN - MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients.
+(13) github.com. https://github.com/EleanorEllingson/web-dev/tree/b2f2a382e77a20fd6895677c8b8f402ac4bae352/7-bank-project%2F1-template-route%2Ftranslations%2FREADME.ko.md.
 .gradient-page {
   width: 100%;
   min-height: 200px;
