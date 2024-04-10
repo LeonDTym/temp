@@ -174,3 +174,17 @@ $gray: #9b9b9b;
    </div> 
   </div> 
  </div> 
+
+.gradient-page {
+  width: 100%;
+  min-height: 200px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
