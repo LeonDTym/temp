@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .cont {
+            display: flex;
+            align-items: center;
+        }
+
+        .container-prew {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background: linear-gradient(81deg, rgba(179, 200, 224, 0.5) 12%, rgba(146, 214, 196, 1) 60%, rgba(200, 228, 135, 1) 100%);
+            color: white;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .img-prew {
+            width: 40%;
+            height: 30%;
+            margin-right: 10px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(82deg, rgba(179, 200, 224, 0) 0%, rgba(146, 214, 196, 1) 60%, rgba(200, 228, 135, 1) 100%);
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="container-prew">
+            <img class="img-prew" src="/uploads/872dc72e-58f5-4100-9d19-4d0d97e8b99a/newspaper-reader-1024x687-695022069.jpg" alt="newspaper-reader-1024x687-695022069.jpg">
+            <div class="overlay"></div>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</body>
+</html>
