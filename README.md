@@ -1,84 +1,76 @@
-
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Обучающиеся Импорт обучающихся</title>
+<html>
+  <head>
+    <title>Цены на металлы, камни и монеты</title>
     <style>
-        /* Add some basic styling to make the page look decent */
-        body {
-            font-family: Arial, sans-serif;
-        }
-       .filter {
-            margin-bottom: 20px;
-        }
-       .table-container {
-            overflow-x: auto;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f0f0f0;
-        }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
     </style>
-</head>
-<body>
-    <h1>Обучающиеся Импорт обучающихся</h1>
-    <div class="filter">
-        <label>Фильтр</label>
-        <select>
-            <option value="">Пользователь Служебный</option>
-            <!-- Add more options here -->
-        </select>
-    </div>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Фамилия</th>
-                    <th>Имя</th>
-                    <th>Отчество</th>
-                    <th>Дата рождения</th>
-                    <th>Факультет</th>
-                    <th>Форма обучения</th>
-                    <th>№ Студенческого</th>
-                    <th>Срок действия студенческого</th>
-                    <th>Отчёты</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Data will be displayed here -->
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-                <!-- Add more rows here -->
-            </tbody>
-        </table>
-    </div>
-    <div class="pagination">
-        <p>Страница 1 из 2400</p>
-        <p>15 элементов на странице</p>
-        <p>Отображены записи 1-15 из 35991</p>
-        <button>+ Добавить</button>
-        <button>Подтверждение достоверности</button>
-        <button>Наличие согласия</button>
-        <button>Данных</button>
-    </div>
-</body>
-</html>
+  </head>
+  <body>
+    <h1>Цены на металлы, камни и монеты</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Тип Ремпламента</th>
+          <th>Цена</th>
+          <th>Валюта</th>
+          <th>Дата Утверждения</th>
+          <th>Создатель</th>
+          <th>Утвердитель</th>
+          <th>Архивный номер</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Принято внешней системой 795-15-009ERM/18</td>
+          <td>Авансы по валютам</td>
+          <td>16765</td>
+          <td>79500620240402-001</td>
+          <td>02/04/2024 00:00</td>
+          <td>02/04/2024 14:34</td>
+          <td>su_ermspec</td>
+          <td>su_ermpodpisant</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Принято внешней системой 705.15.07.001/02</td>
+          <td>Курсы БПК</td>
+          <td>16763</td>
+          <td>70500520210102.003</td>
+          <td>02/01/2024 14:41</td>
+          <td>02/01/2021 14:30</td>
+          <td>Su ormspec</td>
+          <td>Su ormpodpisant</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Принято внешней системой 795-15-07-009ERM/99</td>
+          <td>Цены на камни</td>
+          <td>16771</td>
+          <td>79500420240402-002</td>
+          <td>02/04/2024 14:50</td>
+          <td>02/04/2024 14:40</td>
+          <td>su_ermspec</td>
+          <td>su_ermpodpisant</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Принято внешней системой 795-15-07-009ERM/98</td>
+          <td>Цены на монеты</td>
+          <td>16769</td>
+          <td>79500120240402-002</td>
+          <td>02/04/2024 15:01</td>
+          <td>02/04/2024 14:3
