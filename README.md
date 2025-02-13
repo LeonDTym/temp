@@ -3,3 +3,5 @@ services.AddAuthentication("Project2Scheme")
         options.Cookie.Name = "Project2.Cookie"; // Уникальное имя куки
     });
 https://docs.google.com/presentation/d/1FeH8Kd_h7XCPg-6CJZTBiUQCTm2-ctdYxIxyQsbHgQk/edit?usp=sharing
+
+https://docs.google.com/document/d/1B-nN8HEtxswQk2sjxM4i_47W1SCP2BIYGtNQkYufSKk/edit?usp=sharing
